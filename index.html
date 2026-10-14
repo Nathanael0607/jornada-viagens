@@ -19,12 +19,19 @@
           alt="Bussola do Logo Jornada Viagens na cor branca"
         />
       </a>
-      <!-- Ela serve puramente para agrupar outros elementos (como textos, imagens, botões ou outras tags) para que você possa organizá-los e estilizá-los juntos -->
+
+      <!-- <div> Ela serve puramente para agrupar outros elementos (como textos, imagens, botões ou outras tags) para que você possa organizá-los e estilizá-los juntos -->
       <div class="navigation-menu">
-        <img src="img/menu.png" alt="Menu" />
+        <label for="menu">
+          <img src="img/menu.png" alt="Menu" />
+        </label>
+
+        <!-- O atributo hidden serve para ocultar o input-->
+        <input type="checkbox" id="menu" hidden />
+
         <!-- <nav> Ela é usada para agrupar o menu principal do site, rodapés com links importantes, índices ou barras laterais de navegação.-->
         <nav>
-          <ul>
+          <ul class="list-links">
             <li>
               <!-- O atributo target="_blank" serve para abrir o link em outra aba-->
               <a href="blog.html" target="_blank" title="Acessar blog">Blog</a>
