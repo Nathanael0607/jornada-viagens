@@ -14,32 +14,97 @@ header {
   height: 64px;
 }
 
+.logo-mobile {
+  display: block;
+}
+
+.logo-desktop {
+  display: none;
+}
+
 .navigation-menu {
-    margin-top: 24px;
+  margin-top: 24px;
 }
 
 /* Menu de navegação hamburger */
 input[type="checkbox"]:checked ~ nav {
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: var(--background-tertiary-color);
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--background-tertiary-color);
 }
 
 nav {
-    display: none;
+  display: none;
 }
 
 .list-links {
-    /* Removendo os marcadores da lista */
-    list-style: none;  
+  /* Removendo os marcadores da lista */
+  list-style: none;
 }
 .list-links li {
-    margin: 16px 0;
+  margin: 16px 0;
 }
-.list-links li a{
-    color: var(--text-secondary-color);
-    text-decoration: none;
+.list-links li a {
+  color: var(--text-secondary-color);
+  text-decoration: none;
+  font-weight: var(--menu-text-weight);
+  font-size: 24px;
+}
+
+/* Responsividade para tablets */
+@media screen and (min-width: 768px) {
+  .navigation-menu {
+    margin-top: 0;
+  }
+
+  .navigation-menu label {
+    display: none;
+  }
+
+  .navigation-menu nav {
+    display: block;
+  }
+
+  .navigation-menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    width: 467px;
+  }
+
+  .navigation-menu li {
+    margin: 0;
+  }
+
+  /* Responsividade para desktops */
+  @media screen and (min-width: 1024px) {
+    header {
+      padding: 38px 120px;
+    }
+    .logo {
+      width: 260px;
+      height: 64px;
+    }
+    .img-desktop {
+      display: block;
+    }
+    .img-mobile {
+      display: none;
+    }
+    .navigation-menu a:hover {
+      color: var(--primary-color);
+    }
+  }
+
+  /* Para fazer um calculo de responsividade de acordo com a largura da tela por exemplo: resolução de 1440 com 120px para 1990 o calculo seria: (1990 * 120px) / 1440px = 165px */
+  /*Exemplo para meu notebook com resolução de 1536px*/
+  @media screen and (min-width: 1536px) {
+    header {
+      padding: 38px 128px;
+    }
+  }
 }
