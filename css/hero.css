@@ -16,12 +16,25 @@
   background-size: cover; /* COBRIR TODO O ESPAÇO DISPONÍVEL DO MOBILE */
 }
 
+.hero h2 {
+  padding: 88px 24px; /*TOPO, BAIXO E LATERAIS */
+  margin: 0; /* NESSE CASO NÃO PRECISAMOS DE MARGEM PARA CENTRALIZAR O TEXTO*/
+  font-weight: var(--text-weight); /* PESO DA FONTE */
+  font-size: 20px;
+  text-align: center; /* CENTRALIZAR O TEXTO */
+  line-height: 32px; /* ESPAÇAMENTO ENTRE AS LINHAS */
+}
+
 @media screen and (min-width: 768px) {
   .hero-img {
     height: 620px;
     background-image: url("../img/hero-tablet.jpg");
     background-repeat: no-repeat;
 
+    .hero h2 {
+      padding: 88px 60px;
+      font-size: 32px;
+    }
   }
 }
 
@@ -31,4 +44,15 @@
     background-image: url("../img/hero-desktop.jpg");
     background-repeat: no-repeat;
   }
+    .hero h2 {
+        padding: 88px 120px;
+        font-size: 32px;
+        line-height: 30px;
+    }
 }
+
+@media screen and (min-width: 1920px) {
+    .hero h2 {
+      padding: 88px 160px;
+    }
+  }
