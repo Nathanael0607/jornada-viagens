@@ -89,10 +89,10 @@ nav {
       width: 260px;
       height: 64px;
     }
-    .img-desktop {
+    .logo-desktop {
       display: block;
     }
-    .img-mobile {
+    .logo-mobile {
       display: none;
     }
     .navigation-menu a:hover {
