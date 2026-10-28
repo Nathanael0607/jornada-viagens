@@ -1,3 +1,10 @@
+.offers-cards {
+  display: flex; /* Propriedade do Display Flex */
+  flex-direction: column; /* Coloca os cards um abaixo do outro */
+  align-items: center; /* Centraliza os cards verticalmente */
+  gap: 24px; /* Espaco entre os cards; Propriedade do Display Flex */
+}
+
 .card {
   color: var(--text-secondary-color);
   height: 288px;
@@ -29,14 +36,42 @@
 }
 
 .card header span {
-  display: inline-block;
   margin-top: 24px;
   font-size: 32px;
+  display: inline-block;
+}
+
+.card.japao {
+  background: url(../img/bg-card-japao.png) no-repeat;
+  background-size: cover; /*Garante que ele sempre ocupe o espaço da tela na proporcionalidade*/
+}
+
+.card.san-andreas {
+  background: url(../img/bg-card-san-andreas.png) no-repeat;
+  background-size: cover;
+}
+
+.card.paraiba {
+  background: url(../img/bg-card-paraiba.png) no-repeat;
+  background-size: cover;
+}
+
+.card.manaus {
+  background: url(../img/bg-card-manaus.png) no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .offers-cards {
+    flex-direction: row; /* Coloca os cards um ao lado do outro */
+    flex-wrap: wrap; /* Quebra o card em duas linhas quando atinge o limite da tela */
+    justify-content: center; /* Centraliza os cards horizontalmente */
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .card {
-    width: 588px;
+    width: 420px;
     height: 308px;
   }
   .card header h3 {
@@ -45,5 +80,18 @@
 
   .card header span {
     font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 588px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .offers-cards {
+    width: 1250px;
+    margin: 0 auto;
   }
 }
