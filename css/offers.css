@@ -1,3 +1,7 @@
+.offers {
+  margin-bottom: 100px;
+}
+
 .offers-cards {
   display: flex; /* Propriedade do Display Flex */
   flex-direction: column; /* Coloca os cards um abaixo do outro */
@@ -5,7 +9,7 @@
   gap: 24px; /* Espaco entre os cards; Propriedade do Display Flex */
 }
 
-.card {
+.offers-cards .card {
   color: var(--text-secondary-color);
   height: 288px;
   width: 312px;
@@ -16,7 +20,7 @@
   text-align: center;
 }
 
-.card header {
+.offers-cards .card header {
   background-color: transparent;
   display: block;
   position: static;
@@ -24,18 +28,18 @@
   margin-bottom: 24px;
 }
 
-.card header p {
+.offers-cards .card header p {
   font-size: 20px;
   font-weight: var(--text-weight);
 }
 
-.card header h3 {
+.offers-cards .card header h3 {
   font-size: 40px;
   font-weight: var(--text-weight);
   margin: 8px 0 0;
 }
 
-.card header span {
+.offers-cards .card header span {
   margin-top: 24px;
   font-size: 32px;
   display: inline-block;
@@ -70,21 +74,21 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .card {
+  .offers-cards .card {
     width: 420px;
     height: 308px;
   }
-  .card header h3 {
+  .offers-cards .card header h3 {
     font-size: 48px;
   }
 
-  .card header span {
+  .offers-cards .card header span {
     font-size: 40px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .card {
+  .offers-cards .card {
     width: 588px;
   }
 }
