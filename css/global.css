@@ -66,6 +66,7 @@ body {
   color: var(--text-secondary-color);
   font-weight: var(--title-weight);
   font-size: 20px;
+  text-align: center;
   text-decoration: none;
   border-radius: 8px;
   line-height: 64px; /* definir a altura da caixa de linha e controlar o espaçamento vertical entre as linhas de um texto */
