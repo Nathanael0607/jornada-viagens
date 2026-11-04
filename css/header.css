@@ -1,4 +1,4 @@
-header {
+.main-header {
   background-color: var(--background-tertiary-color);
   display: flex;
   flex-direction: row;
@@ -82,7 +82,7 @@ nav {
 
   /* Responsividade para desktops */
   @media screen and (min-width: 1024px) {
-    header {
+    .main-header {
       padding: 38px 120px;
     }
     .logo {
@@ -103,7 +103,7 @@ nav {
   /* Para fazer um calculo de responsividade de acordo com a largura da tela por exemplo: resolução de 1440 com 120px para 1990 o calculo seria: (1990 * 120px) / 1440px = 165px */
   /*Exemplo para meu notebook com resolução de 1536px*/
   @media screen and (min-width: 1536px) {
-    header {
+    .main-header {
       padding: 38px 128px;
     }
   }
