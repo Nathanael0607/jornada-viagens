@@ -19,11 +19,6 @@
   box-sizing: border-box;
 }
 
-.categories-cards .card h3 {
-  font-size: 28px;
-  font-weight: var(--title-weight);
-}
-
 @media screen and (min-width: 768px) {
   .categories .section-tittle {
     width: 100%;
