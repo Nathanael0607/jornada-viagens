@@ -6,10 +6,6 @@
   margin-top: 24px;
 }
 
-.payments .content-container {
-  display: flex;
-}
-
 .payments .content-container .image-gallery .image.bag {
   background-image: url(../img/image-bag.png);
   background-size: cover;
@@ -48,14 +44,16 @@
 
 @media screen and (min-width: 1440px) {
   .payments .content-container {
+    display: flex;
     justify-content: space-between;
   }
-
+  
   .payments .content-container .content-text {
     width: 384px;
   }
 
   .payments .content-container .image-gallery {
     width: 790px;
+    margin: 0;
   }
 }
