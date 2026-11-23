@@ -1,0 +1,43 @@
+.testimunial-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.testimunial-container article header p {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.testimunial-container footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.testimunial-container footer img {
+  width: 86px;
+  height: 86px;
+}
+
+.testimunial-container footer .profile-content h4 {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: var(--title-weight);
+  margin: 0 0 8px;
+}
+
+.testimunial-container footer .rading .star {
+  font-size: 32px;
+  color: var(--secondary-color);
+  line-height: 32px;
+}
+
+@media screen and (min-width: 1440px) {
+  .testimunial-container {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
